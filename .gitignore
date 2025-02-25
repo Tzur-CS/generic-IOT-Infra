@@ -1,0 +1,14 @@
+# Ignore all files
+*
+
+# Allow specific file types to be uploaded
+!*.md
+!*.c
+!*.cpp
+!*.h
+!.gitignore
+!.myfuncs
+!makefile
+!makefiles
+!*.java
+!*/
