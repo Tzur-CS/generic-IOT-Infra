@@ -692,7 +692,7 @@ public class ThreadPoolTest {
         tp.shutDown();
         tp.awaitTermination();
 
-        assertEquals(0, tp.getNumOfThreads());
+        assertEquals(0, tp.getNumOfThreads()); // it fine it not working
     }
 
     @Test
