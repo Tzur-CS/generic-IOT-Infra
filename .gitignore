@@ -12,3 +12,4 @@
 !makefiles
 !*.java
 !*/
+!.xml

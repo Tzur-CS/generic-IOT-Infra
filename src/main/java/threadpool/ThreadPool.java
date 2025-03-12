@@ -1,6 +1,6 @@
 package threadpool;
 
-import com.sun.istack.internal.NotNull;
+import org.jetbrains.annotations.NotNull;
 import waitablequeue.WaitablePQFixedSize;
 
 import java.util.concurrent.*;

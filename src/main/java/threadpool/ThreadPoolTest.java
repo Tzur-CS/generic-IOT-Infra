@@ -98,6 +98,7 @@
 //    }
 //
 //}
+
 ////
 ////import org.junit.Assert;
 ////import org.junit.Before;
@@ -432,6 +433,10 @@
 package threadpool;
 
 import org.junit.Before;
+import org.junit.After;
+import org.junit.Test;
+import java.util.concurrent.*;
+//import static org.junit.Assert.*;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -442,6 +447,10 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class ThreadPoolTest {
     private ThreadPool tp;
+
+    // public static void main(String[] args) {
+    //     System.out.println("khg");
+    // }
 
     @Before
     public void initTP() {
@@ -478,7 +487,6 @@ public class ThreadPoolTest {
         tp.submit(longRunningTask);
         tp.submit(longRunningTask);
         Future<Integer> future = tp.submit(longRunningTask, Priority.LOW);
-
         assertNotNull(future);
         assertFalse(future.isCancelled());
         Thread.sleep(1_000);
